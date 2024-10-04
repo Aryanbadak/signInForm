@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #d1 {
+            width: 50%;
+            height: 600px;
+            background-color: #fd7070;
+            display: flex;
+            margin: auto;
+        }
+
+        #d2 {
+            width: 80%;
+            height: 80%;
+            background-color: white;
+            margin: auto;
+        }
+
+        h1 {
+            margin: 30px 0 2px 0;
+        }
+
+        .d3 {
+            max-width: 100%;
+            /* border: 1px solid black; */
+            /* max-height: 100%; */
+            /* min-height: 100%; */
+            text-align: start;
+            margin: 20px;
+
+        }
+
+        .d-1 {
+            max-width: 100%;
+            /* border: 1px solid black; */
+            /* max-height: 100%; */
+            /* min-height: 100%; */
+            text-align: start;
+            margin: 20px;
+        }
+
+        #d4 {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        table,
+        th {
+            border-collapse: collapse;
+            border-right: 1px solid rgb(235, 230, 230);
+            padding: 5px;
+            background-color: rgb(237, 253, 247);
+            color: #4d5154;
+
+        }
+
+        #s3 {
+            font-size: 14px;
+            color: #4d5154;
+        }
+
+        input {
+            margin: 5px 0 5px 0;
+            border: none;
+            border-bottom: 2px solid rgb(167, 162, 162);
+        }
+
+        [type="text"] {
+            width: 44%;
+            padding: 10px 0;
+            font-size: 12px;
+        }
+
+        [type="email"] {
+            width: 100%;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+
+        [type="password"] {
+            width: 44%;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+
+        [name="p_no"] {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .inp {
+            margin-right: 56px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: rgb(6, 84, 218);
+            color: white;
+            border: none;
+        }
+
+        th:hover {
+            color: rgb(6, 84, 218);
+            border-bottom: 1px solid rgb(6, 84, 218);
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <div id="d2">
+            <div class="d3">
+                <div class="d-1">
+                    <div id="d4">
+                        <h1>Sign Up</h1>
+                        <span id="s2">Let's create your account.</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Account</th>
+                            <th>Personal Info</th>
+                            <th id="th3">payment detail</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="d-1">
+                    <span id="s3">Enter your details below.</span>
+                    <form action="">
+                        <span class="inp"> <input type="text" name="user" placeholder="First name"></span>
+                        <input type="text" name="lastname" placeholder="Last name">
+                        <input type="email" name="email" placeholder="Email">
+                        <span class="inp"><input type="password" name="password" placeholder="password" required></span>
+                        <input type="password" name="confirmpass" placeholder="Confirm password">
+                        <input type="text" name="p_no" placeholder="Phone no">
+                        <button type="submit">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
